@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крафтове морозиво</title>
+    <style>
+        /* Убираем отступы у body, чтобы header и nav были на всю ширину */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box; /* Учитываем padding в ширине */
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .photo-gallery img {
+            width: 45%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .menu, .contacts, .locations {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .ice-cream {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contacts p {
+            font-size: 18px;
+        }
+
+        /* Стили для фото */
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .photo-container img {
+            width: 45vw;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .photo-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .photo-container img {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Крафтове морозиво в Дніпрі</h1>
+    <h1>Pastry Lover Ice Cream</h1>
+    <p>Ми – виробники крафтового морозива. Для нас важливі якісні продукти та ідейність проєкту, адже це більше, ніж просто морозиво.</p>
+</header>
+
+<nav>
+    <a href="#flavors">Смаки</a>
+    <a href="#contacts">Контакти</a>
+    <a href="#locations">Де ми ?</a>
+</nav>
+
+<section class="photo-gallery">
+    <div class="photo-container">
+        <a href="https://ibb.co/wZ8mgbH7">
+            <img src="https://i.ibb.co/p6NFwsDQ/IMG-8643.jpg" alt="IMG-8643">
+        </a>
+        <a href="https://ibb.co/7Jj5BdMW">
+            <img src="https://i.ibb.co/cckHRSfF/IMG-8641.jpg" alt="IMG-8641">
+        </a>
+    </div>
+</section>
+
+</body>
+</html>
+
+<section class="menu" id="flavors">
+    <h2>Смаки морозива</h2>
+    <div class="ice-cream-list">
+<div class="info-box">
+    <p>Калорійність та БЖУ вказані на 150 г морозива.</p>
+    <p>Зберігати при температурі -12 °C до -24 °C протягом трьох місяців.</p>
+</div>
+        <div class="ice-cream">
+            <h3>Пломбір</h3>
+            <p>Молоко коров’яче, вершки коров’ячі, цукор, ванільна паста, жовток пастеризований, сухе молоко, глюкозний сироп, стабілізатор</p>
+            <p><strong>312 ккал | Б: 6.5г | Ж: 16.7г | В: 33.8г</strong></p>
+        </div>
+        <div class="ice-cream">
+            <h3>Смородина-м’ята</h3>
+            <p>Молоко коров’яче, вершки коров’ячі, цукор, ванільна паста, жовток пастеризований, смородина, лимонний сік, м’ята, сухе молоко, глюкозний сироп, стабілізатор, пектинова камедь</p>
+            <p><strong>396 ккал | Б: 8.3г | Ж: 20.9г | В: 43.8г</strong></p>
+        </div>
+        <div class="ice-cream">
+            <h3>Вишня-ваніль-амаретто</h3>
+            <p>Молоко коров’яче, вершки коров’ячі, цукор, ванільна паста, жовток пастеризований, вишня, лимонний сік, амаретто, сухе молоко, глюкозний сироп, стабілізатор, пектинова камедь</p>
+            <p><strong>421 ккал | Б: 8.2г | Ж: 20.9г | В: 47.9г</strong></p>
+        </div>
+        <div class="ice-cream">
+            <h3>Абрикос-гречка</h3>
+            <p>Молоко коров’яче, вершки коров’ячі, цукор, мед гречаний, жовток пастеризований, абрикос, лимонний сік, крупа гречана, сухе молоко, масло вершкове, глюкозний сироп, стабілізатор, пектинова камедь</p>
+            <p><strong>220 ккал | Б: 6.5г | Ж: 13.5г | В: 32.4г</strong></p>
+        </div>
+        <div class="ice-cream">
+            <h3>Чорний шоколад з відтінком трюфеля</h3>
+            <p>Молоко безлактозне, вершки рослинні, цукор, жовток пастеризований, чорний шоколад, трюфельне масло, трюфельна паста, глюкозний сироп, стабілізатор</p>
+            <p><strong>444 ккал | Б: 6.6г | Ж: 32.9г | В: 30г</strong></p>
+        </div>
+        <div class="ice-cream">
+            <h3>Арахіс-місо паста, солона крихта</h3>
+            <p>Молоко безлактозне, вершки рослинні, масло вершкове безлактозне, цукор, ванільна паста, арахісова паста, місо паста, глюкозний сироп, стабілізатор, борошно</p>
+            <p><strong>441 ккал | Б: 8.5г | Ж: 25.5г | В: 47.7г</strong></p>
+        </div>
+        <div class="ice-cream">
+            <h3>Фісташка-білий шоколад</h3>
+            <p>Молоко безлактозне, вершки рослинні, фісташкова паста, фісташка, цукор, жовток пастеризований, білий шоколад, глюкозний сироп, стабілізатор</p>
+            <p><strong>385 ккал | Б: 6.8г | Ж: 25.2г | В: 34.4г</strong></p>
+        </div>
+        <div class="ice-cream">
+            <h3>Кокос-матча</h3>
+            <p>Молоко кокосове, вершки рослинні, цукор, матча, глюкозний сироп, стабілізатор</p>
+            <p><strong>460 ккал | Б: 2.8г | Ж: 37.6г | В: 33.2г</strong></p>
+        </div>
+    </div>
+</section>
+
+<section class="photo-gallery">
+    <div class="photo-container">
+        <a href="https://ibb.co/Gv7sWdcw">
+            <img src="https://i.ibb.co/C5BJbwhd/IMG-8644.jpg" alt="IMG-8644">
+        </a>
+    </div>
+</section>
+
+<section class="locations" id="locations">
+    <h2>Де ми ?</h2>
+    <p><strong>Restaurants Spoon</strong> – Проспект Д. Яворницького, 3</p>
+    <p><strong>Coffee Dog</strong> – Проспект Гагаріна, 131</p>
+    <p><strong>Eight Coffee Bar</strong> – Вул.Гоголя, 9</p>
+    <p><strong>Gastronomie Bistro</strong> – Вул.Сергія Єфремова, 24</p>
+    <p><strong>Flat Brew Bar</strong> – Вул.Баррикадна, 22</p>
+    <p><strong>Maemo Prostir</strong> – Вул.Сергія Єфремова, 24</p>
+    <p><strong>Coffee 2 Room</strong> – Південний провулок, 2</p>
+    <p><strong>Космос</strong> – Вул.Воскресенська, 11</p>
+</section>
+
+<section id="cooperation" style="text-align: center; max-width: 800px; margin: 0 auto; padding: 40px;">
+    <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 20px;">Співпраця</h2>
+    
+    <p style="font-size: 18px; line-height: 1.6; margin-bottom: 15px;">
+        Ми шукаємо партнерів, які цінують якість та унікальний смак!  
+        Якщо ви власник кав'ярні, ресторану, магазину чи мережі закладів і хочете дивувати гостей 
+        справжнім крафтовим морозивом — запрошуємо до співпраці!  
+    </p>
+    
+    <p style="font-size: 18px; line-height: 1.6; margin-bottom: 15px;">
+        Наше морозиво створене з натуральних інгредієнтів, без штучних добавок та компромісів. 
+        Ми пропонуємо гнучкі умови співпраці, індивідуальні рішення для вашого бізнесу 
+        та стабільні поставки продукції найвищої якості.  
+    </p>
+    
+    <p style="font-size: 18px; line-height: 1.6; margin-bottom: 30px;">
+        Давайте разом дарувати людям незабутні смакові враження!  
+        Зв'яжіться з нами, і ми обговоримо всі деталі.  
+    </p>
+
+    <a href="#contacts" style="display: inline-block; font-size: 18px; background-color: black; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px;">
+        Зв'язатися
+    </a>
+</section>
+
+<section class="photo-gallery">
+    <div class="photo-container">
+        <a href="https://ibb.co/HpPcV5M9">
+            <img src="https://i.ibb.co/G3MZ0z1r/DSC01068-Original.jpg" alt="DSC01068-Original">
+        </a>
+        <a href="https://ibb.co/QFw1J4JF">
+            <img src="https://i.ibb.co/Z6Dkf0f6/IMG-8642.jpg" alt="IMG-8642">
+        </a>
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <h2>Контакти</h2>
+    <p> <i class="fa-solid fa-phone"></i> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> Телефон: <a href="tel:+380663739404">066 373 9404</a></p>
+    <p> <i class="fa-brands fa-instagram"></i>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> Instagram: <a href="https://www.instagram.com/pastrylover.icecream" target="_blank">@pastrylover.icecream</a></p>
+    <p> <i class="fa-brands fa-telegram"></i> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> Telegram: <a href="https://t.me/arthur_agibalov" target="_blank">@arthur_agibalov</a></p>
+</section>
+
+</body>
+</html>
