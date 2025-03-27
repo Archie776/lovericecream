@@ -1,0 +1,46 @@
+.cooperation {
+    text-align: center; /* Центрирование содержимого */
+    padding: 50px 20px;
+}
+
+.cooperation-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cooperation-text {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 15px;
+}
+
+.cooperation-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.cooperation-btn:hover {
+    background-color: gray;
+}
+
+.info-box {
+    background-color: #f8f8f8; /* Светлый фон для выделения */
+    padding: 15px;
+    border-radius: 8px; /* Закругление углов */
+    text-align: center; /* Выравнивание по центру */
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    max-width: 400px; /* Ограничение ширины */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+}
